@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Letter</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap"
+      rel="stylesheet"
+    />
+
+    <style>
+      @font-face {
+        font-family: "Miama Nueva";
+        src: url("./Miama\ Nueva/miamanueva.ttf");
+      }
+      @font-face {
+        font-family: "Baskerville";
+        src: url("./Baskerville/baskervillelight.ttf");
+      }
+      /* @import url("https://fonts.googleapis.com/css2?family=Baskerville&display=swap"); */
+
+      body,
+      html {
+        margin: 0;
+        padding: 0;
+        height: 100%;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: url("./vintage_background.png") no-repeat center center;
+        background-size: cover;
+      }
+      .container {
+        position: relative;
+        width: 1748px;
+        height: 2480px;
+      }
+      .banner {
+        position: absolute;
+        top: 80px;
+        left: 690px;
+      }
+      .text-container {
+        position: absolute;
+        top: 629px;
+        left: 174px;
+        gap: 20px;
+        display: flex;
+        flex-direction: row;
+      }
+      .text-item {
+        font-family: "Baskerville";
+        font-size: 40px;
+        font-weight: 400;
+        line-height: 45.76px;
+        text-align: left;
+      }
+      .text-item-footer {
+        font-family: "Baskerville";
+        font-size: 40px;
+        font-weight: 400;
+        line-height: 56px;
+        text-align: left;
+        text-wrap: nowrap;
+      }
+      .text-item-2-container {
+        gap: 8px;
+        display: flex;
+        flex-direction: column;
+      }
+      .text-container-2 {
+        position: absolute;
+        top: 903px;
+        left: 174px;
+        gap: 27px;
+        display: flex;
+        flex-direction: row;
+      }
+      .text-item-3 {
+        font-family: "Baskerville";
+        font-size: 40px;
+        font-weight: 400;
+        line-height: 45.76px;
+        text-align: left;
+      }
+      .text-item-4 {
+        padding: 0 0 18px 0;
+        font-family: "Miama Nueva";
+        font-size: 48px;
+        font-style: italic;
+        font-weight: 400;
+        line-height: 105.31px;
+        text-align: left;
+        text-wrap: nowrap;
+        color: #393022;
+      }
+      .text-container-3 {
+        position: absolute;
+        width: 1400px;
+        height: 784px;
+        top: 1031px;
+        left: 174px;
+        gap: 0px;
+        font-family: "Baskerville";
+        font-size: 40px;
+        font-weight: 400;
+        line-height: 56px;
+        text-align: left;
+      }
+      .highlight {
+        font-family: "Baskerville";
+        font-size: 40px;
+        font-weight: 400;
+        line-height: 56px;
+        text-align: left;
+      }
+      .mask-group {
+        position: absolute;
+        width: 611.76px;
+        height: 104px;
+        top: 1872px;
+        left: 206px;
+        gap: 0px;
+      }
+      .footer {
+        position: fixed;
+        display: flex;
+        flex-direction: column;
+        width: 1097px;
+        height: 116px;
+        top: 2281px;
+        left: 326px;
+        gap: 4px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <img src="./banner.png" alt="Banner" class="banner" />
+      <div class="text-container">
+        <div class="text-item text-item-1">Кому:</div>
+        <div class="text-item-2-container">
+          <div class="text-item">М-р Мирас</div>
+          <div class="text-item">Казахстан, Астана</div>
+        </div>
+      </div>
+      <div class="text-container-2">
+        <div class="text-item text-item-3">Дорогой</div>
+        <div class="text-item text-item-4">Мистер Мирас</div>
+      </div>
+      <div class="text-container-3">
+        Мы рады проинформировать вас, что вам предоставлено лучшее место в
+        концертном зале Дворца Мира и Согласия на первый в Астане кино-концерт в
+        полнометражном формате под живой аккомпанемент большого симфонического
+        оркестра <span class="highlight">«Билет в Хогвартс»</span>. <br /><br />
+        Для вас играет симфонический оркестр «ABDI CREATIVE TEAM».
+        <br /><br />
+        Концерт пройдёт 27 июля 2024 года в 8 часов вечера по адресу: г. Астана,
+        просп. Тауелсиздик 57.
+        <br /><br />
+        Искренне ваша,
+        <br />
+        Миневра МакГонагалл,
+        <br />
+        заместитель директора
+      </div>
+      <img class="mask-group" src="./mask group.png" alt="signature" />
+      <div class="footer">
+        <div class="text-item-footer">
+          HOGWARTS SCHOOL of WITCHCRAFT & WIZARDRY
+        </div>
+        <div class="text-item-footer">
+          Headmaster: Albus Dumbledore, D. Wiz/ X.J.(sorc.), S.of Mag.Q.
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
